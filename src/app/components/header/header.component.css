@@ -7,10 +7,10 @@
 }
 
 .container__nav {
-  padding: 1.3rem;
-  background-color: #A5ABA0;
   display: flex;
+  padding: 1.3rem;
   justify-content: left;
+  background-color: #A5ABA0;
 }
 
 .container__nav img {
