@@ -1,0 +1,18 @@
+:root {
+  --blue-key: blue
+  --primary-key: #4E514E;
+  --secondary-key: #666666;
+  --third-key: #A5ABA0;
+  --fourst-key: #DBDDD0;
+}
+
+.container__nav {
+  padding: 1.3rem;
+  background-color: #A5ABA0;
+  display: flex;
+  justify-content: left;
+}
+
+.container__nav img {
+  margin: 0 10% 0 10%;
+}
