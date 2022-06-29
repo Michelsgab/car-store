@@ -1,0 +1,13 @@
+.footer {
+  flex: 1;
+  padding: 1.1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #DBDDD0;
+}
+
+.footer a {
+  color: inherit;
+  cursor: default;
+  text-decoration: none;
+}
