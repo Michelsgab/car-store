@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="car" *ngIf="carstore">
+      <img
+        src={{carstore.imagem}}
+        alt=""
+      />
+    </div>
+    <nav class="container__nav" *ngIf="carstore; else notFound">
+      <h3>Marca: {{carstore.marca}}</h3>
+      <h4>Modelo: {{carstore.modelo}}</h4>
+      <p>Ano: {{carstore.ano}}</p>
+      <p>Preço: R${{carstore.preco}}</p>
+      <p>
+        Potência:<em> {{carstore.potencia}}HP</em>
+      </p>
+      <p class="descricao">
+        Descrição: <em>{{carstore.descricao}}</em>
+      </p>
+    </nav>
+</div>
+
+<ng-template #notFound>
+  <p>Nenhum carro foi encontrado!</p>
+</ng-template>

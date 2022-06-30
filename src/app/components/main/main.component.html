@@ -10,14 +10,8 @@
         <div class="content">
           <h3>Marca: {{cars.marca}}</h3>
           <h4>Modelo: {{cars.modelo}}</h4>
-          <p>Ano: {{cars.ano}}</p>
-          <p>Preço: R${{cars.preco}}</p>
-          <p>
-            Potência:<strong><em> {{cars.potencia}}HP</em></strong>
-          </p>
-          <p class="descricao">Descrição: <em>{{cars.descricao}}</em></p>
           <div class="image__button">
-            <button class="image__button__content">{{cars.modelo}}</button>
+            <button class="image__button__content" (click)="handleButton(cars.id)">{{cars.modelo}}</button>
           </div>
         </div>
       </div>

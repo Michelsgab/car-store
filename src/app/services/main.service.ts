@@ -14,4 +14,8 @@ export class MainService {
   getAll(): Observable<Carstore[]> {
     return this.http.get<Carstore[]>(this.apiUrl);
   }
+
+  getUniqueCar(id: number): Observable<Carstore> {
+    return this.http.get<Carstore>(`${this.apiUrl}/${id}`);
+  }
 }
