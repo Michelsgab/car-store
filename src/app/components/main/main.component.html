@@ -1,14 +1,25 @@
 <main>
   <div class="image">
+    <h2>Car Store</h2>
     <div class="image__car">
-      <img src="https://www.planetcarsz.com/assets/uploads/2021/05/AUDI%20Q7%20COMPETITION%20PLUS%202022%2001.jpg" alt="Audi Q7 2021">
-      <div class="content">
-        <h3>Marca: Audi</h3>
-        <h4>Modelo: Q7</h4>
-        <p>Ano: 2022</p>
-        <p>Preço: R$340.000,00</p>
-        <p>Potência:<strong><em> 400HP</em></strong></p>
-        <p>djsakd ad asd asd asmdkasda das d asd</p>
+      <div *ngFor="let cars of carStore">
+        <img
+          src={{cars.imagem}}
+          alt="Audi Q7 2021"
+        />
+        <div class="content">
+          <h3>Marca: {{cars.marca}}</h3>
+          <h4>Modelo: {{cars.modelo}}</h4>
+          <p>Ano: {{cars.ano}}</p>
+          <p>Preço: R${{cars.preco}}</p>
+          <p>
+            Potência:<strong><em> {{cars.potencia}}HP</em></strong>
+          </p>
+          <p class="descricao">Descrição: <em>{{cars.descricao}}</em></p>
+          <div class="image__button">
+            <button class="image__button__content">{{cars.modelo}}</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>

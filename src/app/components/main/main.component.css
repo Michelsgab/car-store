@@ -11,7 +11,9 @@ main {
 }
 
 .image__car {
-  background-color: #DBDDD0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   border-radius: 0px 0px 12px 12px;
 }
 
@@ -22,8 +24,32 @@ main {
   max-width: 420px;
 }
 
+.image__button {
+  margin: 3rem auto;
+  text-align: center;
+  align-items: center;
+}
+
+.image__button__content {
+  width: 10rem;
+  height: 2rem;
+  color: #FFF;
+  margin: 0 auto;
+  cursor: pointer;
+  font-weight: bold;
+  border: #A5ABA0;
+  align-items: center;
+  border-radius: 0.4rem;
+  background-color: #424540;
+}
+
 .content {
   margin-left: 0.5rem;
+}
+
+.descricao {
+  max-width: 420px;
+  max-height: 40px;
 }
 
 @media only screen and (max-width: 768px) {
